@@ -53,8 +53,7 @@ class Questions extends Component {
               </div>
             </Link>
           </div>
-        </div>
-        <div className="row">
+
           {
             this.state.questions.length > 0 ?
               <>

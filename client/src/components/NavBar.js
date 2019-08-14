@@ -11,11 +11,11 @@ function NavBar(props) {
   return (
     <nav className="navbar navbar-dark bg-primary fixed-top">
       <Link className="navbar-brand" to="/">
-        Q&App
+        Q & App
       </Link>
       {
         !auth0Client.isAuthenticated() &&
-        <button className="btn btn-dark" onClick={auth0Client.signIn}>Sign In</button>
+        <button className="btn btn-secondary" onClick={auth0Client.signIn}>Sign In</button>
       }
       {
         auth0Client.isAuthenticated() &&

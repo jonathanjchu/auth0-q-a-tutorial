@@ -26,7 +26,7 @@ class Question extends Component {
   }
 
   async submitAnswer(answer) {
-    await axios.post(`http://localhost:8081/questions/${this.state.question.id}/answers`, {
+    await axios.post(`http://localhost:8081/questions/${this.state.question._id}/answers`, {
       answer,
     }, {
         headers: { 'Authorization': `Bearer ${auth0Client.getIdToken()}` }
